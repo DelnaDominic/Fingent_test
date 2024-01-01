@@ -3,6 +3,7 @@ class Employee_model extends CI_Model {
     public function __construct() {
         parent::__construct();
     }
+    //insert 
     public function insert($data){
         $this->db->where('employee_code', $data['employee_code']);
         $query = $this->db->get('tbl_employees');
